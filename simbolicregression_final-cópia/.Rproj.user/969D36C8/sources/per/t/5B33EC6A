@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1609688546884.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "5B33EC6A",
+    "lastKnownWriteTime" : 1653208588928,
+    "last_content_update" : 1609688546884,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "85C7658A",
+        "caption" : "crime_centre_halfrange",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=crime_centre_halfrange&cache_key=85C7658A",
+        "displayedObservations" : 44,
+        "environment" : "",
+        "expression" : "crime_centre_halfrange",
+        "object" : "crime_centre_halfrange",
+        "preview" : 0,
+        "totalObservations" : 44,
+        "variables" : 10
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

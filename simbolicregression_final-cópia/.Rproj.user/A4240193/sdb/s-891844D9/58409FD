@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "Modelo <- function(Model, Y, X, Xe = X) {\n\n  if(Model == 1) {\n\n    RL <- RLParametrosModelo1(Y, X)\n    Ye <- RLEstimar(Xe, RL)\n    Metricas <- RLQualidade(Model, Y, Ye)\n    ModeloFinal <-list(\"Parametros do Modelo\" = RL,\"Head Intervalos Estimados\" = head(Ye),  \"Medidas de Qualidade do Modelo\" = Metricas)\n\n    return(ModeloFinal)\n\n  } else if(Model == 2) {\n\n    RL <- RLParametrosModelo2(Y, X)\n    Ye <- RLEstimar(Xe, RL)\n    Metricas <- RLQualidade(Model, Y, Ye)\n    ModeloFinal <-list(\"Parametros do Modelo\" = RL,\"Head Intervalos Estimados\" = head(Ye),  \"Medidas de Qualidade do Modelo\" = Metricas)\n\n    return(ModeloFinal)\n\n  } else if(Model == 3) {\n\n    RL <- RLParametrosModelo3(Y,X)$par\n    Ye <- Modelo3Previsao(Xe,RL)\n    Metricas <- RLQualidade2(Y,Ye)\n    ModeloFinal <-list(\"Parametros do Modelo\" = RL,\"Head Intervalos Estimados\" = Ye,  \"Medidas de Qualidade do Modelo\" = Metricas)\n\n    return(ModeloFinal)\n\n  }\n\n}\n\n",
+    "created" : 1504958517857.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2593531609",
+    "id" : "58409FD",
+    "lastKnownWriteTime" : 1522240888,
+    "last_content_update" : 1522240888332,
+    "path" : "C:/Users/pjmalaquias/OneDrive - SONAE/Pessoal/Mestrado/simbolicregression_final/R/Compilador.R",
+    "project_path" : "R/Compilador.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

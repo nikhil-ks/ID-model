@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "RLParametrosModelo3 <- function(Y, X) {\n\n  #  Modelo3 -- Distribuição TriangularGeral\n  #  Y -- Variável Resposta\n  #         Y -> yc,yr,ym\n  #  X -- p Variáveis Explicativas\n  #         X -> xc1,xr1,xm1,xc2,xr2,,xm2,...,xcp,xrp,xmp\n\n  ################################################################################################################################\n\n  initialRL <- c(10,10,10)\n  RLvar <- c(55,55,55)\n\n  SolOpt <- RepLOptim(parmean = initialRL,parsd = RLvar, fr = OptFuction,lower = c(0,0,-Inf), Y = Y, X = X)\n\n  return(SolOpt)\n}\n\n",
+    "created" : 1504958539831.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1813015196",
+    "id" : "EA61FF69",
+    "lastKnownWriteTime" : 1504978850,
+    "last_content_update" : 1504978850342,
+    "path" : "C:/Users/pjmalaquias/OneDrive - SONAE/Pessoal/Mestrado/simbolicregression_final/R/Modelo_DTriangularGeral.R",
+    "project_path" : "R/Modelo_DTriangularGeral.R",
+    "properties" : {
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

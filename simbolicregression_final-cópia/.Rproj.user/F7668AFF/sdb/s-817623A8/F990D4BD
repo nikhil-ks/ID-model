@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "RLQualidade <- function(Model, Y, Ye) {\n\n  Y  <- as.matrix(Y)\n  Ye <- as.matrix(Ye)\n\n  Ym    <- matrix(rep(mean(Y[, 1]), nrow(Y)))\n  Ymean <- cbind(Ym, 0)\n\n  DMe     <- DistMallows(Model, Ye, Ymean)\n  DM      <- DistMallows(Model, Y, Ymean)\n  DMrmsem <- DistMallows(Model, Y, Ye)\n\n  CD <- DMe / DM\n\n  #transformação centro e raios em extremos\n  Yeu <- Ye[, 1] + Ye[, 2]\n  Yel <- Ye[, 1] - Ye[, 2]\n  Yru <- Y[, 1] + Y[, 2]\n  Yrl <- Y[, 1] - Y[, 2]\n\n  A1 <- Yru - Yeu\n  A2 <- Yrl - Yel\n\n  B1 <- (mean(A1^2))\n  B2 <- (mean(A2^2))\n\n  RMSEM <- sqrt(DMrmsem / nrow(Ye))\n  RMSEU <- B1^0.5\n  RMSEL <- B2^0.5\n\n  return(list(c(\"CD\"= CD, \"RMSEM\" = RMSEM, \"RMSEL\" = RMSEL, \"RMSEU\" = RMSEU)))\n\n}\n\n#------------------------------------------------------------------------------------#\nRLQualidade2 <- function(Y, Ye) {\n\n  Y  <- as.matrix(Y)\n  Ye <- as.matrix(Ye)\n\n  Ym    <- matrix(rep(mean(Y[, 1]), nrow(Y)))\n  Ymean <- cbind(Ym, 0, 0)\n\n  DMrmsem <- DistMallows2(Y[, 1], Y[, 2], Y[, 3], Ye[, 1], Ye[, 2], Ye[, 3])\n\n  #transformação centro e raios em extremos\n  Yeu <- Ye[, 1] + Ye[, 2]\n  Yel <- Ye[, 1] - Ye[, 2]\n  Yru <- Y[, 1] + Y[, 2]\n  Yrl <- Y[, 1] - Y[, 2]\n\n  A1 <- Yru - Yeu\n  A2 <- Yrl - Yel\n\n  B1 <- (mean(A1^2))\n  B2 <- (mean(A2^2))\n\n  RMSEM <- sqrt(DMrmsem / nrow(Ye))\n  RMSEU <- B1^0.5\n  RMSEL <- B2^0.5\n\n  return(list(c(\"RMSEM\" = RMSEM, \"RMSEL\" = RMSEL, \"RMSEU\" = RMSEU)))\n\n}\n",
+    "created" : 1502575505229.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1764199893",
+    "id" : "F990D4BD",
+    "lastKnownWriteTime" : 1502233933,
+    "last_content_update" : 1502233933,
+    "path" : "D:/Users/pjmalaquias/Desktop/simbolicregression/R/Modelo_Qualidade.R",
+    "project_path" : "R/Modelo_Qualidade.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

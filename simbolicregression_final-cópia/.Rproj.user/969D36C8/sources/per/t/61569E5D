@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1608371337734.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "61569E5D",
+    "lastKnownWriteTime" : 7596482291483746414,
+    "last_content_update" : 1608371337734,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "e4ab8e707dfd40759744379246c481b1",
+        "name" : "r_crime_big",
+        "title" : "r_crime_big"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}

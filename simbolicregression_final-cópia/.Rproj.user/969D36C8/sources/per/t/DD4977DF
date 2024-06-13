@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1609688621463.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "DD4977DF",
+    "lastKnownWriteTime" : 2466321603649696626,
+    "last_content_update" : 1609688621463,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "c698f6a1d07145d4b2e90a6bff82f153",
+        "name" : "r_crimes_4",
+        "title" : "r_crimes_4"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 11,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}

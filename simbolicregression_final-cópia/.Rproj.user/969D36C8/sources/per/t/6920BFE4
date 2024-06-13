@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1609688459210.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3170966189",
+    "id" : "6920BFE4",
+    "lastKnownWriteTime" : 1594666072,
+    "last_content_update" : 1594666072,
+    "path" : "D:/IDModel/simbolicregression_final-cópia/R/Modelo_DUniforme.R",
+    "project_path" : "R/Modelo_DUniforme.R",
+    "properties" : {
+        "cursorPosition" : "0,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

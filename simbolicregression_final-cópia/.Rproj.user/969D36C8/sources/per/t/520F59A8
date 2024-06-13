@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1609688635919.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "520F59A8",
+    "lastKnownWriteTime" : 1653316372088,
+    "last_content_update" : 1609688635919,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "d93e1218c8374f0dbf58abfd051cd1d6",
+        "name" : "r_crime_global",
+        "title" : "r_crime_global"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 12,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}

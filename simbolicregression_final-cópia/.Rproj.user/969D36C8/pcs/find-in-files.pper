@@ -1,0 +1,11 @@
+{
+    "dialog-state" : {
+        "caseSensitive" : false,
+        "filePatterns" : [
+        ],
+        "path" : "",
+        "projectRelative" : true,
+        "query" : "cbind(Xc, 1) %*% parametros_centros",
+        "regex" : false
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1606137748718.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1805897137",
+    "id" : "D3DB6267",
+    "lastKnownWriteTime" : 1601233033,
+    "last_content_update" : 1601233033,
+    "path" : "D:/IDModel/simbolicregression_final-cópia/R/QualityMeasure.R",
+    "project_path" : "R/QualityMeasure.R",
+    "properties" : {
+        "cursorPosition" : "0,0",
+        "scrollLine" : "11",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

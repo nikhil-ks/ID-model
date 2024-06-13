@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "SDM <- function(x,media) {\n\n  sum <- 0\n  n <- nrow(x)\n\n  for(i in 1:n) {\n    DM <- DistMallows2(x[i,1],x[i,2],x[i,1],media,0,media)\n    sum <- sum + DM\n  }\n  return(sum)\n}\n\nSDM1 <- function(x,media) {\n\n  sum <- 0\n  n <- nrow(x)\n\n  for(i in 1:n) {\n    DM <- DistMallows2(x[i,1],x[i,2],x[i,1],media[i,1],media[i,2],media[i,1])\n    sum <- sum + DM\n  }\n  return(sum)\n}\n",
+    "created" : 1505227824079.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2794682181",
+    "id" : "D406DD0A",
+    "lastKnownWriteTime" : 1522240956,
+    "last_content_update" : 1522240956993,
+    "path" : "C:/Users/pjmalaquias/OneDrive - SONAE/Pessoal/Mestrado/simbolicregression_final/R/testes.R",
+    "project_path" : "R/testes.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 13,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "Modelo <- function(Model, Y, X, Xe) {\n\n  if(Model == 1) {\n\n    RL <- RLParametrosModelo1(Y, X)\n    Ye <- RLEstimar(Xe, RL)\n    Metricas <- RLQualidade(Model, Y, Ye)\n    ModeloFinal <-list(\"Parametros do Modelo\" = RL,\"Intervalos Estimados (top results)\" = Ye,  \"Medidas de Qualidade do Modelo\" = Metricas)\n\n    return(ModeloFinal)\n\n  } else if(Model == 2) {\n\n    RL <- RLParametrosModelo2(Y, X)\n    Ye <- RLEstimar(Xe, RL)\n    Metricas <- RLQualidade(Model, Y, Ye)\n    ModeloFinal <-list(\"Parametros do Modelo\" = RL,\"Intervalos Estimados (top results)\" = Ye,  \"Medidas de Qualidade do Modelo\" = Metricas)\n\n    return(ModeloFinal)\n\n  } else if(Model == 3) {\n\n    RL <- RLParametrosModelo3(Y,X)$Par\n    Ye <- Modelo3Previsao(Xe,RL)\n    Metricas <- RLQualidade2(Y,Ye)\n    ModeloFinal <-list(\"Parametros do Modelo\" = RL,\"Intervalos Estimados (top results)\" = Ye,  \"Medidas de Qualidade do Modelo\" = Metricas)\n\n    return(ModeloFinal)\n\n  }\n\n}\n\n",
+    "created" : 1502575455734.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2706006611",
+    "id" : "FD900659",
+    "lastKnownWriteTime" : 1502233632,
+    "last_content_update" : 1502233632,
+    "path" : "D:/Users/pjmalaquias/Desktop/simbolicregression/R/Compilador.R",
+    "project_path" : "R/Compilador.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

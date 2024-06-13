@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1595068531898.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1831148596",
+    "id" : "1B0ECF1D",
+    "lastKnownWriteTime" : 1595173081,
+    "last_content_update" : 1595173081073,
+    "path" : "D:/IDModel/simbolicregression_final-cópia/R/ClusterwiseRegression.R",
+    "project_path" : "R/ClusterwiseRegression.R",
+    "properties" : {
+        "cursorPosition" : "85,45",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

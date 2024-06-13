@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "RLParametrosModelo3 <- function(Y, X) {\n\n  #  Modelo3 -- Distribuição TriangularGeral\n  #  Y -- Variável Resposta\n  #         Y -> yc,yr,ym\n  #  X -- p Variáveis Explicativas\n  #         X -> xc1,xr1,xm1,xc2,xr2,,xm2,...,xcp,xrp,xmp\n\n  ################################################################################################################################\n\n  initialRL <- c(1,1,1)\n  RLvar <- c(5,5,5)\n\n  SolOpt <- RepLOptim(parmean = initialRL,parsd = RLvar, fr = OptFuction,lower = c(0,0,-Inf), Y = Y, X = X)\n\n  return(SolOpt)\n}\n\n",
+    "created" : 1503417169225.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1550710948",
+    "id" : "D394FBDA",
+    "lastKnownWriteTime" : 1503436012,
+    "last_content_update" : 1503436012409,
+    "path" : "~/Desktop/simbolicregression/R/Modelo_DTriangularGeral.R",
+    "project_path" : "R/Modelo_DTriangularGeral.R",
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

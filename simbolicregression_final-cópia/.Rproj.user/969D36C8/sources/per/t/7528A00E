@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1601234593892.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2417491731",
+    "id" : "7528A00E",
+    "lastKnownWriteTime" : 1594251790,
+    "last_content_update" : 1594251790,
+    "path" : "D:/IDModel/simbolicregression_final-cópia/R/Distances.R",
+    "project_path" : "R/Distances.R",
+    "properties" : {
+        "cursorPosition" : "0,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "RLQualidade <- function(Model, Y, Ye) {\n\n  Y  <- as.matrix(Y)\n  Ye <- as.matrix(Ye)\n\n  Ym    <- matrix(rep(mean(Y[, 1]), nrow(Y)))\n  Ymean <- cbind(Ym, 0)\n\n  DMe     <- DistMallows(Model, Ye, Ymean)\n  DM      <- DistMallows(Model, Y, Ymean)\n  DMrmsem <- DistMallows(Model, Y, Ye)\n\n  CD <- DMe / DM\n\n  #transformação centro e raios em extremos\n  Yeu <- Ye[, 1] + Ye[, 2]\n  Yel <- Ye[, 1] - Ye[, 2]\n  Yru <- Y[, 1] + Y[, 2]\n  Yrl <- Y[, 1] - Y[, 2]\n\n  A1 <- Yru - Yeu\n  A2 <- Yrl - Yel\n\n  B1 <- (mean(A1^2))\n  B2 <- (mean(A2^2))\n\n  RMSEM <- sqrt(DMrmsem / nrow(Ye))\n  RMSEU <- B1^0.5\n  RMSEL <- B2^0.5\n\n  return(list(c(\"CD\"= CD, \"RMSEM\" = RMSEM, \"RMSEL\" = RMSEL, \"RMSEU\" = RMSEU)))\n\n}\n\n#------------------------------------------------------------------------------------#\nRLQualidade2 <- function(Y, Ye) {\n\n  Y  <- as.matrix(Y)\n  Cy <- Y[,1]\n  Ry <- Y[,2]\n  My <- Y[,3]\n\n  Ye <- as.matrix(Ye)\n  Cye <- Ye[,1]\n  Rye <- Ye[,2]\n  Mye <- Ye[,3]\n\n  n  <- nrow(Ye)\n  DistMallFinal <- 0\n\n  for (i in 1:n) {\n    DM <- DistMallows2(Cye[i],Rye[i],Mye[i],Cy[i],Ry[i],My[i])\n\n    DistMallFinal <- DistMallFinal + DM\n  }\n\n  #transformação centro e raios em extremos\n  Yeu <- Ye[, 1] + Ye[, 2]\n  Yel <- Ye[, 1] - Ye[, 2]\n  Yru <- Y[, 1] + Y[, 2]\n  Yrl <- Y[, 1] - Y[, 2]\n\n  A1 <- Yru - Yeu\n  A2 <- Yrl - Yel\n\n  B1 <- (mean(A1^2))\n  B2 <- (mean(A2^2))\n\n  RMSEM <- sqrt(DistMallFinal/ nrow(Ye))\n  RMSEU <- B1^0.5\n  RMSEL <- B2^0.5\n\n  return(list(c(\"RMSEM\" = RMSEM, \"RMSEL\" = RMSEL, \"RMSEU\" = RMSEU)))\n\n}\n",
+    "created" : 1503417241803.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1391028632",
+    "id" : "A2EB8913",
+    "lastKnownWriteTime" : 1502991601,
+    "last_content_update" : 1502991601,
+    "path" : "~/Desktop/simbolicregression/R/QualidadeModelos.R",
+    "project_path" : "R/QualidadeModelos.R",
+    "properties" : {
+    },
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "DistMallows <- function(Model, A, B) {\n\n  Centros <- cbind(as.matrix(A[,1]), as.matrix(B[,1]))\n  Raios   <- cbind(as.matrix(A[,2]), as.matrix(B[,2]))\n\n  C <- matrix(rep(0, nrow(Centros)))\n  R <- matrix(rep(0, nrow(Raios)))\n\n  for(i in 1:nrow(Centros)) {\n    C[i, ] <- (Centros[i, 1] - Centros[i, 2])^2\n  }\n\n  for(i in 1:nrow(Raios)) {\n    if(Model == 1) {\n      R[i, ] <- (1 / 3) * (Raios[i, 1] - Raios[i, 2])^2\n    } else if (Model == 2) {\n      R[i, ] <- (1 / 6) * (Raios[i, 1] - Raios[i, 2])^2\n    } else {\n      print(\"escolher modelo 1-Uniforme, 2-Triangular Simetrico, 3-Triangular Geral\")\n    }\n  }\n\n  M  <- C + R\n  DM <- sum(M[, 1])\n  return(DM)\n}\n\n",
+    "created" : 1503417128736.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2522228374",
+    "id" : "5510AF0",
+    "lastKnownWriteTime" : 1503416528,
+    "last_content_update" : 1503416528,
+    "path" : "~/Desktop/simbolicregression/R/DistMallows.R",
+    "project_path" : "R/DistMallows.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

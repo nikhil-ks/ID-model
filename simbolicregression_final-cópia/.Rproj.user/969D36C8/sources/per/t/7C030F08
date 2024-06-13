@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1608370560394.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2686199979",
+    "id" : "7C030F08",
+    "lastKnownWriteTime" : 1608371687,
+    "last_content_update" : 1608371687610,
+    "path" : "D:/IDModel/simbolicregression_final-cópia/R/SaveIntoExcel.R",
+    "project_path" : "R/SaveIntoExcel.R",
+    "properties" : {
+        "cursorPosition" : "0,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
